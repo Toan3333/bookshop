@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-list max-lg:grid-cols-2 max-lg:gap-20">
             <div className="">
-              <img src="" alt="Logo" />
+              <img src="./images/logo.png" alt="Logo" />
               <div className="my-7 font-bold leading-normal">
                 CỬA HÀNG PHÂN PHỐI SÁCH CHÍNH HÃNG
               </div>

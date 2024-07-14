@@ -4,17 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#39DB4A",
+        main: "#22C55E",
         green: "#6ADFE6",
-        greenLight: "#90BD95",
-        text: "#4A4A4A",
+        greenLight: "#F0FDF4",
+        text: "#1F2937",
         red: "#F00",
         redBox: "#E44",
         secondary2: "#4D4D4D",
-        secondary: "#FF6868",
+        secondary: "#EF4444",
         roundPopular: "#C1F1C6",
-        grayText: "#555555",
+        grayText: "#9CA3AF",
         yellow: "#EA9514",
+      },
+      fontSize: {
+        textTitle: "28px",
+        price: "18px",
       },
     },
   },

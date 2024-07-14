@@ -1,7 +1,15 @@
 import React from "react";
 import { FaPhone, FaRegHeart, FaRegUser, FaSearch } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 const Header = () => {
+  const menuList = [
+    { id: 1, name: "Trang chủ", link: "/" },
+    { id: 2, name: "Sản phẩm", link: "/menu" },
+    { id: 3, name: "Về chúng tôi", link: "/about-us" },
+    { id: 4, name: "Bài viết", link: "/blog" },
+    { id: 5, name: "Liên hệ", link: "/contact" },
+  ];
   return (
     <>
       <header className="border-b">
@@ -22,25 +30,21 @@ const Header = () => {
       <div className="container mt-10">
         <div className="navbar justify-between bg-base-100 my-3">
           <div className="">
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a>
+              <img src="./images/logo.png" className="cursor-pointer" alt="" />
+            </a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="flex items-center px-1 gap-20 header-menu">
-              <li>
-                <a>Trang chủ</a>
-              </li>
-              <li>
-                <a>Sản phẩm</a>
-              </li>
-              <li>
-                <a>Về chúng tôi</a>
-              </li>
-              <li>
-                <a>Bài viết</a>
-              </li>
-              <li>
-                <a>Liên hệ</a>
-              </li>
+              {menuList.map((item) => (
+                <li key={item.id}>
+                  <NavLink
+                    to={item.link}
+                    className={({ isActive }) => (isActive ? "text-red" : "hover:text-red")}>
+                    {item.name}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
           <label className="input input-bordered flex items-center gap-2">

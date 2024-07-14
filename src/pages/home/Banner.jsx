@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="w-full">
         <img
           src="./images/banner1 1.png"
-          className="w-full h-[400px] object-cover cursor-pointer max-lg:h-48"
+          className="w-full h-[400px]  cursor-pointer max-lg:h-48"
           alt=""
         />
       </div>
