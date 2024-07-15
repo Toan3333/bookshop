@@ -39,8 +39,8 @@ body {
   font-family: "Work Sans";
   color: #000;
 }
-.container {
-  max-width: 1310px;
+.container- {
+  max-width: 1410px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;

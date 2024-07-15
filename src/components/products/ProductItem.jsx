@@ -7,7 +7,7 @@ const ProductItem = ({ className = "" }) => {
   return (
     <div className="pt-5">
       <div
-        className={`p-2 relative group overflow-hidden rounded-[30px] border bg-white cursor-pointer`}>
+        className={`p-2 relative mr-3 group overflow-hidden rounded-[30px] border bg-white cursor-pointer`}>
         <div
           className={`flex ${
             isHorizontal ? "flex-row justify-start max-lg:flex-col" : "flex-col"

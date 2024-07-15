@@ -1,6 +1,14 @@
 import React from "react";
 import "../App.css";
-import { FaSearchLocation, FaPhoneAlt, FaGoogle, FaFacebookF } from "react-icons/fa";
+import {
+  FaSearchLocation,
+  FaPhoneAlt,
+  FaGoogle,
+  FaFacebookF,
+  FaFacebook,
+  FaMapMarkerAlt,
+  FaClock,
+} from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="pt-10 pb-5">
@@ -9,20 +17,58 @@ const Footer = () => {
           <div className="footer-list max-lg:grid-cols-2 max-lg:gap-20">
             <div className="">
               <img src="./images/logo.png" alt="Logo" />
-              <div className="my-7 font-bold leading-normal">
-                CỬA HÀNG PHÂN PHỐI SÁCH CHÍNH HÃNG
+              <div className="mt-3 text-grayText mb-5 font-normal leading-normal">
+                Bạn có câu hỏi? Liên hệ chúng tôi
               </div>
+              <div className="mb-5 font-semibold leading-normal">(+84) 776 831 909</div>
+              <ul className="flex items-center gap-4">
+                <li>
+                  <a
+                    href="#"
+                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-main">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-main">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-main">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-main">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="max-lg:">
+              <h3 className="font-semibold text-main text-[18px] leading-normal mb-8">
+                Thông tin liên hệ
+              </h3>
               <ul className="flex flex-col gap-3">
                 <li>
-                  <a href="#" className="flex items-center gap-2">
-                    <FaSearchLocation className="w-5 h-5"></FaSearchLocation>
-                    <div>Tầng 12, Nhà T, Quận 12, TPHCM</div>
+                  <a href="#" className="flex gap-2">
+                    <FaMapMarkerAlt className="w-5 h-5" />
+                    <div>Quận 12, Thành phố Hồ Chí Minh</div>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="flex items-center gap-2">
-                    <FaPhoneAlt className="w-5 h-5"></FaPhoneAlt>
-                    <div>123456789</div>
+                    <FaClock className="w-5 h-5" />
+                    <div className="leading-normal">
+                      Thứ 2 - Thứ 6: 9:00 - 20:00 Thứ 7: 9:00 - 12:00
+                    </div>
                   </a>
                 </li>
                 <li>
@@ -36,23 +82,6 @@ const Footer = () => {
                     <FaFacebookF className="w-5 h-5"></FaFacebookF>
                     <div>Tầng 12, Nhà T, Quận 12, TPHCM</div>
                   </a>
-                </li>
-              </ul>
-            </div>
-            <div className="max-lg:">
-              <h3 className="font-bold leading-normal mb-8">Về chúng tôi</h3>
-              <ul className="flex flex-col gap-5">
-                <li>
-                  <a href="#">Trang chủ</a>
-                </li>
-                <li>
-                  <a href="#">Giới thiệu</a>
-                </li>
-                <li>
-                  <a href="#">Sản phẩm</a>
-                </li>
-                <li>
-                  <a href="#">Hệ thống cửa hàng</a>
                 </li>
               </ul>
             </div>
