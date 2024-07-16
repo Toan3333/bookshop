@@ -38,7 +38,7 @@ const FlashSale = () => {
           <div className="rounded-lg py-3 px-4 bg-white">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
-                <h2 className="text-textTitle text-secondary font-semibold leading-normal">
+                <h2 className="text-textTitle text-main font-semibold leading-normal">
                   FLASH SALE
                 </h2>
                 <div className="flex items-center gap-5">
@@ -63,7 +63,7 @@ const FlashSale = () => {
               </div>
             </div>
           </div>
-          <ProductList></ProductList>
+          <ProductList useSlider={true}></ProductList>
         </div>
       </div>
     </div>

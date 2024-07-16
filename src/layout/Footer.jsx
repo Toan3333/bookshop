@@ -8,15 +8,25 @@ import {
   FaFacebook,
   FaMapMarkerAlt,
   FaClock,
+  FaTwitter,
+  FaYoutube,
 } from "react-icons/fa";
+import { FaInstagram, FaRegClock } from "react-icons/fa6";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { CgMail } from "react-icons/cg";
+
 const Footer = () => {
   return (
-    <div className="pt-10 pb-5">
+    <div className="pb-5">
       <div className="py-10 border">
         <div className="container">
           <div className="footer-list max-lg:grid-cols-2 max-lg:gap-20">
             <div className="">
-              <img src="./images/logo.png" alt="Logo" />
+              <img
+                src="./images/logo.png"
+                className="max-w-[277px] w-full object-cover"
+                alt="Logo"
+              />
               <div className="mt-3 text-grayText mb-5 font-normal leading-normal">
                 Bạn có câu hỏi? Liên hệ chúng tôi
               </div>
@@ -25,102 +35,125 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-main">
+                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-mainDark">
                     <FaFacebook className="w-5 h-5" />
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-main">
-                    <FaFacebook className="w-5 h-5" />
+                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-mainDark">
+                    <FaInstagram className="w-5 h-5" />
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-main">
-                    <FaFacebook className="w-5 h-5" />
+                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-mainDark">
+                    <FaTwitter className="w-5 h-5" />
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-main">
-                    <FaFacebook className="w-5 h-5" />
+                    className="flex items-center justify-center text-white w-10 h-10 rounded-full bg-mainDark">
+                    <FaYoutube className="w-5 h-5" />
                   </a>
                 </li>
               </ul>
             </div>
             <div className="max-lg:">
-              <h3 className="font-semibold text-main text-[18px] leading-normal mb-8">
+              <h3 className="font-semibold text-mainDark text-[18px] leading-normal mb-8">
                 Thông tin liên hệ
               </h3>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 text-text">
                 <li>
-                  <a href="#" className="flex gap-2">
-                    <FaMapMarkerAlt className="w-5 h-5" />
-                    <div>Quận 12, Thành phố Hồ Chí Minh</div>
+                  <a href="#" className="flex gap-2 font-normal">
+                    <HiOutlineLocationMarker className="w-7 h-7" />
+                    <div className="leading-normal">Quận 12, Thành phố Hồ Chí Minh</div>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center gap-2">
-                    <FaClock className="w-5 h-5" />
+                  <a href="#" className="flex items-center gap-2 font-normal">
+                    <FaRegClock className="w-8 h-8" />
                     <div className="leading-normal">
                       Thứ 2 - Thứ 6: 9:00 - 20:00 Thứ 7: 9:00 - 12:00
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center gap-2">
-                    <FaGoogle className="w-5 h-5"></FaGoogle>
+                  <a href="#" className="flex items-center gap-2 font-normal">
+                    <CgMail className="w-6 h-6"></CgMail>
                     <div>bansach@gmail.com</div>
                   </a>
                 </li>
+              </ul>
+            </div>
+            <div className="">
+              <h3 className="font-bold text-mainDark leading-normal mb-8">Dịch vụ</h3>
+              <ul className="flex flex-col gap-5 text-text">
                 <li>
-                  <a href="#" className="flex items-center gap-2">
-                    <FaFacebookF className="w-5 h-5"></FaFacebookF>
-                    <div>Tầng 12, Nhà T, Quận 12, TPHCM</div>
+                  <a href="#" className="font-normal">
+                    Điều khoản sử dụng
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="font-normal">
+                    Bảo mật thông tin khách hàng
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="font-normal">
+                    Bảo mật thanh toán
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="font-normal">
+                    Về chúng tôi
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="font-normal">
+                    Hệ thống nhà sách
                   </a>
                 </li>
               </ul>
             </div>
             <div className="">
-              <h3 className="font-bold leading-normal mb-8">Chính sách</h3>
-              <ul className="flex flex-col gap-5">
+              <h3 className="font-bold text-mainDark leading-normal mb-8">Thông tin liên hệ</h3>
+              <ul className="flex flex-col gap-5 text-text">
                 <li>
-                  <a href="#">Chính sách đối tác</a>
+                  <a href="#" className="font-normal">
+                    Chính sách bảo hành
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Chính sách đổi trả</a>
+                  <a href="#" className="font-normal">
+                    Chính sách đổi - trả - hoàn tiền
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Chính sách thanh toán</a>
+                  <a href="#" className="font-normal">
+                    Chính sách vận chuyển
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Chính sách giao hàng</a>
-                </li>
-              </ul>
-            </div>
-            <div className="">
-              <h3 className="font-bold leading-normal mb-8">Tư vấn khách hàng</h3>
-              <ul className="flex flex-col gap-5">
-                <li>
-                  <a href="#">Mua hàng 12345678</a>
-                </li>
-                <li>
-                  <a href="#">Bản hành 12345678</a>
-                </li>
-                <li>
-                  <a href="#">Khiếu nại 12345678</a>
+                  <a href="#" className="font-normal">
+                    Chính sách thanh toán
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="text-center pt-5 font-medium leading-normal">
-        Copyright © . All rights reserved.
+      <div className="container">
+        <div className="flex justify-between items-center pt-5 font-medium leading-normal">
+          <div>Copyright © . All rights reserved.</div>
+          <div className="flex items-center gap-2">
+            <img src="./images/card.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

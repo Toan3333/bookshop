@@ -2,20 +2,20 @@ import React from "react";
 import Title from "../../components/title/Title";
 import ProductItem from "../../components/products/ProductItem";
 
-const PopularProduct = () => {
+const ViewProduct = () => {
   return (
     <div>
       <div className="container">
-        <Title>Sản phẩm phổ biến</Title>
+        <Title>Nhiều lượt xem</Title>
         <div className="flex items-center justify-between gap-8 py-10 max-lg:flex-col">
-          <div className="max-w-[800px] w-full max-lg:w-full">
+          <div className="w-3/5 max-lg:w-full">
             <img
-              src="./images/banner4 1.png"
-              className="w-full h-[400px] object-cover rounded-2xl"
+              src="./images/view.png"
+              className="w-full h-[580px] object-cover rounded-2xl"
               alt=""
             />
           </div>
-          <div className="w-full  max-lg:w-full">
+          <div className="w-2/5 max-lg:w-full">
             <div className="grid grid-rows-1 gap-2 max-lg:grid-cols-3">
               <ProductItem className="horizontal" />
               <ProductItem className="horizontal" />
@@ -28,4 +28,4 @@ const PopularProduct = () => {
   );
 };
 
-export default PopularProduct;
+export default ViewProduct;

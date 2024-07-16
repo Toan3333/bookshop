@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
-const ProductList = () => {
+const ProductList = ({ useSlider, customItem }) => {
   const sliderRef = useRef(null);
 
   const SampleNextArrow = ({ onClick }) => (
     <div
-      className="custom-arrow"
+      className="custom-arrow cursor-pointer hover:bg-blue"
       style={{
         display: "flex",
         alignItems: "center",
@@ -19,7 +19,7 @@ const ProductList = () => {
         borderRadius: "50%",
         width: "50px",
         height: "50px",
-        zIndex: 1,
+        zIndex: "1",
         border: "2px solid #ccc",
         position: "absolute",
         top: "50%",
@@ -33,7 +33,7 @@ const ProductList = () => {
 
   const SamplePrevArrow = ({ onClick }) => (
     <div
-      className="custom-arrow"
+      className="custom-arrow cursor-pointer"
       style={{
         display: "flex",
         alignItems: "center",
@@ -60,7 +60,6 @@ const ProductList = () => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -68,39 +67,40 @@ const ProductList = () => {
     prevArrow: <SamplePrevArrow />,
   };
 
-  const next = () => {
-    sliderRef.current.slickNext();
-  };
-
-  const previous = () => {
-    sliderRef.current.slickPrev();
-  };
-
   return (
     <div className="py-3 relative">
-      <Slider ref={sliderRef} {...settings}>
-        <div>
+      {useSlider ? (
+        <>
+          <Slider ref={sliderRef} {...settings}>
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+          </Slider>
+          <div className="absolute top-1/2 transform -translate-y-50% -right-8">
+            <SampleNextArrow onClick={() => sliderRef.current.slickNext()} />
+          </div>
+          <div className="absolute top-1/2 transform -translate-y-50% -left-8">
+            <SamplePrevArrow onClick={() => sliderRef.current.slickPrev()} />
+          </div>
+        </>
+      ) : customItem ? (
+        <div className="grid grid-cols-4 gap-4">
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
           <ProductItem />
         </div>
-        <div>
+      ) : (
+        <div className="grid grid-cols-5 gap-4">
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
           <ProductItem />
         </div>
-        <div>
-          <ProductItem />
-        </div>
-        <div>
-          <ProductItem />
-        </div>
-        <div>
-          <ProductItem />
-        </div>
-      </Slider>
-      <div className="absolute top-1/2 transform -translate-y-50% -right-8">
-        <SampleNextArrow onClick={next} />
-      </div>
-      <div className="absolute top-1/2 transform -translate-y-50% -left-8">
-        <SamplePrevArrow onClick={previous} />
-      </div>
+      )}
     </div>
   );
 };

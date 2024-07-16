@@ -1,14 +1,16 @@
 import React from "react";
-import { FaPhone, FaRegHeart, FaRegUser, FaSearch } from "react-icons/fa";
+import { FaPhone, FaRegUser, FaSearch } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { BsBag } from "react-icons/bs";
+import { CiHeart, CiUser } from "react-icons/ci";
 const Header = () => {
   const menuList = [
     { id: 1, name: "Trang chủ", link: "/" },
     { id: 2, name: "Sản phẩm", link: "/menu" },
     { id: 3, name: "Về chúng tôi", link: "/about-us" },
     { id: 4, name: "Bài viết", link: "/blog" },
-    { id: 5, name: "Liên hệ", link: "/contact" },
+    { id: 5, name: "Liên hệ", link: "/contact-us" },
   ];
   return (
     <>
@@ -20,9 +22,11 @@ const Header = () => {
               <p>0123 456 789</p>
             </div>
             <div className="flex items-center gap-8">
-              <FaRegHeart className="w-7 h-6"></FaRegHeart>
-              <FaRegUser className="w-7 h-6"></FaRegUser>
-              <IoCartOutline className="w-7 h-7"></IoCartOutline>
+              <CiHeart className="w-7 h-6"></CiHeart>
+              <Link to="/sign-in">
+                <CiUser className="w-7 h-6"></CiUser>
+              </Link>
+              <BsBag className="w-5 h-6" />
             </div>
           </div>
         </div>
@@ -40,14 +44,14 @@ const Header = () => {
                 <li key={item.id}>
                   <NavLink
                     to={item.link}
-                    className={({ isActive }) => (isActive ? "text-red" : "hover:text-red")}>
+                    className={({ isActive }) => (isActive ? "text-main" : "hover:text-main")}>
                     {item.name}
                   </NavLink>
                 </li>
               ))}
             </ul>
           </div>
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input input-bordered flex items-center gap-2 rounded-3xl">
             <input type="text" className="grow" placeholder="Search" />
             <FaSearch></FaSearch>
           </label>

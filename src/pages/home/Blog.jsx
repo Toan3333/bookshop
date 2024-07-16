@@ -4,9 +4,9 @@ import BlogList from "../../components/blog/BlogList";
 
 const Blog = () => {
   return (
-    <div>
+    <div className="py-10">
       <div className="container">
-        <Title>Bài viết</Title>
+        <Title>Bài viết mới</Title>
         <BlogList></BlogList>
       </div>
     </div>

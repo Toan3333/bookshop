@@ -8,31 +8,47 @@ const ProductForYou = () => {
       <div className="container">
         <Title>Dành cho bạn</Title>
         <div className="py-10">
-          <div className="bg-redBox p-6 rounded-lg mb-5">
-            <ul className="flex items-center justify-center gap-8 text-white">
+          <div className="p-6 rounded-lg mb-5">
+            <ul className="flex items-center justify-center gap-8">
               <li>
-                <a href="#">Văn học</a>
+                <a href="#" className="menu-link menu-link-active">
+                  Văn học
+                </a>
               </li>
               <li>
-                <a href="#">Kinh tế</a>
+                <a href="#" className="menu-link">
+                  Kinh tế
+                </a>
               </li>
               <li>
-                <a href="#">Tâm lí - Kỹ năng sống </a>
+                <a href="#" className="menu-link">
+                  Tâm lí - Kỹ năng sống
+                </a>
               </li>
               <li>
-                <a href="#">Nuôi dạy con</a>
+                <a href="#" className="menu-link">
+                  Nuôi dạy con
+                </a>
               </li>
               <li>
-                <a href="#">Sách thiếu nhi</a>
+                <a href="#" className="menu-link">
+                  Sách thiếu nhi
+                </a>
               </li>
               <li>
-                <a href="#">Tiểu sử - Hồi kí</a>
+                <a href="#" className="menu-link">
+                  Tiểu sử - Hồi kí
+                </a>
               </li>
               <li>
-                <a href="#">Sách giáo khoa - Tham khảo</a>
+                <a href="#" className="menu-link">
+                  Sách giáo khoa - Tham khảo
+                </a>
               </li>
               <li>
-                <a href="#">Sách ngoại ngữ</a>
+                <a href="#" className="menu-link">
+                  Sách ngoại ngữ
+                </a>
               </li>
             </ul>
           </div>

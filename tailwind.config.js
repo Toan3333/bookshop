@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         main: "#22C55E",
+        mainDark: "#166534",
         green: "#6ADFE6",
         greenLight: "#F0FDF4",
         text: "#1F2937",
@@ -13,8 +14,9 @@ export default {
         secondary2: "#4D4D4D",
         secondary: "#EF4444",
         roundPopular: "#C1F1C6",
+        btnGoogle: "#CD201F",
         grayText: "#9CA3AF",
-        yellow: "#EA9514",
+        blue: "#0A66C2",
       },
       fontSize: {
         textTitle: "28px",
