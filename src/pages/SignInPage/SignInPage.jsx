@@ -18,14 +18,14 @@ const SignInPage = () => {
                 <input
                   type="email"
                   placeholder="Nhập email"
-                  className="input rounded-[30px] input-bordered w-full"
+                  className="input input-bordered w-full"
                 />
               </div>
               <div className="w-full">
                 <input
                   type="password"
                   placeholder="Mật khẩu"
-                  className="input rounded-[30px] input-bordered w-full"
+                  className="input input-bordered w-full"
                 />
               </div>
               <div className="text-right text-sm font-normal leading-normal">Quên mật khẩu?</div>

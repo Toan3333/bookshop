@@ -8,6 +8,7 @@ import Menu from "./pages/Menu/Menu";
 import Contact from "./pages/Contact/Contact";
 import SignInPage from "./pages/SignInPage/SignInPage";
 import SignUpPage from "./pages/SignUpPage/SignUpPage";
+import Profile from "./pages/Profile/Profile";
 function App() {
   return (
     <Fragment>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact-us" element={<Contact></Contact>}></Route>
           <Route path="/sign-in" element={<SignInPage></SignInPage>}></Route>
           <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
+          <Route path="/profile" element={<Profile></Profile>}></Route>
         </Route>
       </Routes>
     </Fragment>

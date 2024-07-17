@@ -51,7 +51,7 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          <label className="input input-bordered flex items-center gap-2 rounded-3xl">
+          <label className="input input-bordered flex items-center gap-2">
             <input type="text" className="grow" placeholder="Search" />
             <FaSearch></FaSearch>
           </label>

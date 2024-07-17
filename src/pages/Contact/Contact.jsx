@@ -25,15 +25,11 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Họ và tên"
-                  className="input rounded-[30px] input-bordered w-full"
+                  className="input  input-bordered w-full"
                 />
               </div>
               <div className="w-full">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="input rounded-[30px] input-bordered w-full"
-                />
+                <input type="email" placeholder="Email" className="input input-bordered w-full" />
               </div>
               <div className="w-full">
                 <textarea
