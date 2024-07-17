@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div>
+    <div className="mt-[1px]">
       <div className="w-full">
         <img
           src="./images/banner1 1.png"
