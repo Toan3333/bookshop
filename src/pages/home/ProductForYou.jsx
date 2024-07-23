@@ -6,7 +6,7 @@ const ProductForYou = () => {
   return (
     <div>
       <div className="container">
-        <Title>Dành cho bạn111</Title>
+        <Title>Dành cho bạn1111</Title>
         <div className="py-10">
           <div className="bg-redBox p-6 rounded-lg mb-5">
             <ul className="flex items-center justify-center gap-8 text-white">
